@@ -1,6 +1,6 @@
-# Nuxt Minimal Starter
+# DejaVue
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Yet another ChatGPT clone - this one built with Nuxt3 & [`shadcn-vue`](https://shadcn-vue.com/). This README will be updated as features are integrated.
 
 ## Setup
 
@@ -71,5 +71,3 @@ yarn preview
 # bun
 bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
