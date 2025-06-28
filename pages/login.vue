@@ -10,6 +10,7 @@ import {
 import { Label } from '@/components/shadcn/label'
 import { Input } from '@/components/shadcn/input'
 import { BrandIcon, Brand, DejaVue } from '@/components/icons'
+import { FloatingSloc } from '@/components/login'
 
 definePageMeta({
   layout: 'theme'
@@ -23,7 +24,7 @@ const login = async () => {
 // TODO implement
 const loginWithGoogle = async() => await login()
 const loginWithFacebook = async() => await login()
-const loginWithApple = async() => await login()
+const loginWithGithub = async() => await login()
 
 </script>
 <template>
@@ -46,8 +47,8 @@ const loginWithApple = async() => await login()
             <Button @click="loginWithFacebook" variant="outline" class="w-full flex justify-center items-center">
               <BrandIcon :brand="Brand.FACEBOOK" /> Login with Facebook
             </Button>
-            <Button @click="loginWithApple" variant="outline" class="w-full flex justify-center items-center">
-              <BrandIcon :brand="Brand.APPLE" /> Sign in with Apple
+            <Button @click="loginWithGithub" variant="outline" class="w-full flex justify-center items-center">
+              <BrandIcon :brand="Brand.GITHUB" /> Sign in with Github
             </Button>
             <hr />
             <div class="grid gap-2">
@@ -77,4 +78,6 @@ const loginWithApple = async() => await login()
       </CardContent>
     </Card>
   </div>
+  <FloatingSloc />
+
 </template>

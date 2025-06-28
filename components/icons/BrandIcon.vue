@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { siGoogle, siFacebook, siApple, type SimpleIcon } from 'simple-icons'
+import { siGoogle, siFacebook, siApple, siGithub, type SimpleIcon } from 'simple-icons'
 
 const props = defineProps<{
-  brand: 'google' | 'facebook' | 'apple'
+  brand: 'google' | 'facebook' | 'github'
   size?: number
   fill?: string
 }>()
@@ -10,7 +10,7 @@ const props = defineProps<{
 const iconMap: Record<typeof props.brand, SimpleIcon> = {
   'google': siGoogle,
   'facebook': siFacebook,
-  'apple': siApple
+  'github': siGithub
 }
 
 const size = props.size || 24

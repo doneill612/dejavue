@@ -1,6 +1,6 @@
 # DejaVue
 
-Yet another ChatGPT clone - this one built with Nuxt3 & [`shadcn-vue`](https://shadcn-vue.com/). This README will be updated as features are integrated.
+Yet another ChatGPT clone - this one built with Nuxt3 & [`shadcn-vue`](https://shadcn-vue.com/), and highly focused on software engineering assistance. This README will be updated as features are integrated.
 
 ## Setup
 

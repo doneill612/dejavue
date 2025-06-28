@@ -5,7 +5,7 @@ export { default as BrandIcon } from '@/components/icons/BrandIcon.vue'
 export enum Brand {
   GOOGLE = 'google',
   FACEBOOK = 'facebook',
-  APPLE = 'apple'
+  GITHUB = 'github'
 }
 
 // https://boxy-svg.com/ used for resizing + viewbox modifications
