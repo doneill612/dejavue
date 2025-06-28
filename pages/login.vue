@@ -9,7 +9,7 @@ import {
 } from '@/components/shadcn/card'
 import { Label } from '@/components/shadcn/label'
 import { Input } from '@/components/shadcn/input'
-import { BrandIcon, Brand } from '@/components/icons'
+import { BrandIcon, Brand, DejaVue } from '@/components/icons'
 
 definePageMeta({
   layout: 'theme'
@@ -30,8 +30,12 @@ const loginWithApple = async() => await login()
   <div class="flex h-[100vh] items-center justify-center">
     <Card class="w-[350px]">
       <CardHeader>
-        <CardTitle>DejaVue</CardTitle>
-        <CardDescription>Login to access your projects</CardDescription>
+        <CardTitle class="flex justify-center items-center">
+          <span>Deja</span>
+          <DejaVue class="h-8" />
+          <span>ue</span>
+        </CardTitle>
+        <CardDescription class="text-center">Login to access your projects</CardDescription>
       </CardHeader>
       <CardContent>
         <form>
