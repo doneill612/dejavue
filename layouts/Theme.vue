@@ -7,6 +7,7 @@ import {
 } from '@/components/shadcn/dropdown-menu'
 import { Button } from '@/components/shadcn/button'
 import { Moon, Sun } from 'lucide-vue-next'
+import { DejaVue } from '@/components/icons'
 
 const colorMode = useColorMode()
 
@@ -15,7 +16,12 @@ const toggleMode = (mode: 'light' | 'dark' | 'system') => colorMode.preference =
 </script>
 <template>
   <main>
-    <div class="absolute top-1 right-5">
+    <div class="absolute top-5 left-5">
+      <div class="flex font-extrabold items-center justify-center">
+        <DejaVue class="h-8" />
+      </div>
+    </div>
+    <div class="absolute top-5 right-5">
       <DropdownMenu>
         <DropdownMenuTrigger as-child>
           <Button variant="outline">
